@@ -1,6 +1,8 @@
-if [ $# == 1 ]
+#!/bin/bash
+
+if [ $# -eq 1 ]
 then
-    echo hi $1
+    echo "hi $1"
 else
-    echo need name as param chunky
+    echo "need name as param chunky"
 fi
