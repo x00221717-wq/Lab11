@@ -1,0 +1,17 @@
+name: Bash CI
+
+on:
+  push:
+    paths:
+      - '**.sh'
+
+jobs:
+  bash-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Run ShellCheck
+        uses: ludeeus/action-shellcheck@master

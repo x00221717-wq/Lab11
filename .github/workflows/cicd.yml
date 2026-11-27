@@ -3,7 +3,7 @@ name: HTML CI/CD
 on:
   push:
     branches:
-      - main
+      - "**.html"
 
 permissions:
   contents: read
